@@ -1,12 +1,16 @@
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class Cliente extends Pessoa {
+public class Cliente extends Pessoa implements IUsuario {
 
     private Boolean vip;
-    private Endereco endereco;
 
-    private Collection<cliente> cliente = new ArrayList<>();
+    Collection<Endereco> endereco = new ArrayList<Endereco>();
+    ArrayList<Endereco> listaEndereco = new ArrayList<Endereco>();
+
+    public Cliente(String cpf, String nome, String telefone) {
+        super(cpf, nome, telefone);
+    }
 
     public Boolean getVip() {
         return vip;
@@ -16,11 +20,24 @@ public class Cliente extends Pessoa {
         this.vip = vip;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
+    public void addEndereco(Endereco endereco) {
+        this.endereco.add(endereco);
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    public void retornaValidacao() {
     }
+
+    public ArrayList<Endereco> getListaEndereco() {
+        return listaEndereco;
+    }
+
+    public void setListaEndereco(ArrayList<Endereco> listaEndereco) {
+        this.listaEndereco = listaEndereco;
+    }
+
+    @Override
+    public boolean autenticar() {
+        return false;
+    }
+
 }

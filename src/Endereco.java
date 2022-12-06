@@ -7,10 +7,13 @@ public class Endereco {
     private String cidade;
     private String uf;
 
-    private Cliente cliente;
-
-    public Endereco() {
-
+    public Endereco(String cep, String logradouro, String numero, String complemento, String cidade, String uf) {
+        this.cep = cep;
+        this.logradouro = logradouro;
+        this.numero = numero;
+        this.complemento = complemento;
+        this.cidade = cidade;
+        this.uf = uf;
     }
 
     public String getCep() {
@@ -59,13 +62,5 @@ public class Endereco {
 
     public void setUf(String uf) {
         this.uf = uf;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
     }
 }
