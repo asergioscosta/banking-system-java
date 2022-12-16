@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class Cargo {
 
     private String nome;
-    private Funcionario funcionario;
+
+    private Collection<Funcionario> funcionario = new ArrayList<Funcionario>();
 
     public String getNome() {
         return nome;
@@ -11,12 +15,11 @@ public class Cargo {
         this.nome = nome;
     }
 
-    public Funcionario getFuncionario() {
+    public Collection<Funcionario> getFuncionario() {
         return funcionario;
     }
 
-    public void setFuncionario(Funcionario funcionario) {
+    public void setFuncionario(Collection<Funcionario> funcionario) {
         this.funcionario = funcionario;
     }
 }
-

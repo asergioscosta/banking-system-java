@@ -2,8 +2,8 @@ public class ContaCorrente extends Conta {
 
     private Double limite;
 
-    public ContaCorrente(String numero, Double saldo) {
-        super(numero, saldo);
+    public ContaCorrente(String numero) {
+        super(numero);
     }
 
     public Double getLimite() {
@@ -14,19 +14,46 @@ public class ContaCorrente extends Conta {
         this.limite = limite;
     }
 
-    public Object[] transferir(Conta contaDestino, Conta contaOrigem, Double valor) {
+    public void depositar(Double valor) {
+        Credito credito = new Credito(this);
+        credito.setValor(valor);
+        this.addCredito(credito);
+    }
 
-        if (valor > contaOrigem.getSaldo()) {
-            System.out.println("O valor que possui na conta é: " + getSaldo());
+    public void sacar(Double valor) {
+        if (calcularSaldo() < valor) {
+            System.out.println("Saldo Insuficiente");
         } else {
-            Double valorDois = valor;
-            valorDois += contaDestino.getSaldo();
-            contaDestino.setSaldo(valorDois);
-            contaOrigem.setSaldo(getSaldo() - valor);
+            super.sacar(valor);
         }
+    }
 
-        Object[] objects = {contaDestino, contaOrigem};
+    public void transferir(Double valor) {
+        if (calcularSaldo() < valor) {
+            System.out.println("Saldo Insuficiente");
+        } else {
+            this.sacar(valor);
+            this.depositar(valor);
+        }
+    }
 
-        return objects;
+    public Double calcularsaldocontacorrentec() {
+        Double total = 0.0;
+        for (Credito c : this.getListaCredito()) {
+            total += c.getValor();
+        }
+        return total;
+    }
+
+    public Double calcularsaldocontacorrented() {
+        Double total = 0.0;
+        for (Debito d : getListaDebito()) {
+            total += d.getValor();
+        }
+        return total;
+    }
+
+    public Double calcularSaldo() {
+        return (this.calcularsaldocontacorrentec() - this.calcularsaldocontacorrented() + this.limite);
     }
 }

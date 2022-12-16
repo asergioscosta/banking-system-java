@@ -2,22 +2,22 @@ public class Aplicacao4 {
 
     public static void main(String[] args) {
 
-        Cliente c = new Cliente("58546825735", "Victor", "32991560735");
+        Cliente c = new Cliente("12536652706", "Maria", "32587592238");
         System.out.println("O nome do Cliente é: " + c.getNome());
-        ContaCorrente cc = new ContaCorrente("586", 0.00);
-        cc.setSaldo(1000.00);
-        System.out.println("O valor do depósito na Conta Corrente foi: " + cc.getSaldo());
 
+        ContaCorrente cc = new ContaCorrente("2564");
+        cc.setLimite(0.00);
+        cc.depositar(1000.0);
 
-        Cliente c2 = new Cliente("47552695214", "Luana", "32985620453");
+        Cliente c2 = new Cliente("12536652706", "Marcos", "3298575625");
         System.out.println("O nome do Cliente é: " + c2.getNome());
-        ContaPoupanca cp = new ContaPoupanca("586", 0.00);
-        cp.setSaldo(1000.00);
-        System.out.println("O valor do depósito na Conta Poupança: " + cp.getSaldo());
 
+        ContaPoupanca cp = new ContaPoupanca("4682");
+        cp.depositar(1000.0);
 
-        cc.transferir(cp, cc, 500.00);
-        System.out.println("O valor final da Conta Corrente é de: " + cc.getSaldo());
-        System.out.println("O valor final da Conta Poupança é de: " + cp.getSaldo());
+        cc.transferir(500.00);
+
+        System.out.println("O saldo final da conta crédito  é: " + cc.calcularsaldocontacorrented());
+        System.out.println("O saldo final da conta poupança é: " + cc.calcularsaldocontacorrentec());
     }
 }
