@@ -4,7 +4,9 @@ Este repositório contém um projeto Java que implementa um sistema bancário co
 
 ## Descrição
 
-Principais Características:
+Este projeto Java implementa um sistema bancário simples com classes abstratas e concretas, bem como interfaces para representar diferentes entidades do banco. O sistema permite a criação de funcionários do banco, clientes com endereços associados e a realização de operações bancárias básicas, como depósitos, saques e transferências.
+
+## Principais Características:
 
 Classes Abstratas e Interfaces: O projeto utiliza classes abstratas, como "Conta" e "Pessoa", para a criação de tipos de contas e clientes específicos.
 
