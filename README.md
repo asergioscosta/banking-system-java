@@ -57,7 +57,7 @@ Considerações sobre os Métodos nas Classes Concretas:
       - Após, soma o valor do limite.
       - Ao final, retorna o valor.
 
-## 🔨 Funcionalidades
+## Funcionalidades
 
 - `Funcionalidade 1:` 
 
@@ -81,14 +81,14 @@ Considerações sobre os Métodos nas Classes Concretas:
 - Efetuar um depósito de 1000 reais nessa conta Poupanca.
 - Efetue uma transferência de 500 reais da ContaCorrente para ContaPoupanca.
 
-## ✔️ Técnicas e Tecnologias Utilizadas
+## Técnicas e Tecnologias Utilizadas
 
 - **Linguagem de Programação:** ``Java 8``
 - **Ambiente de Desenvolvimento:** ``IntelliJ IDEA``
 - **Paradigma de Programação:** ``Orientação a Objetos``
 
 
-## 📁 Acesso ao Projeto
+## Acesso ao Projeto
 
 Você pode acessar os arquivos do projeto [clicando aqui](https://github.com/asergioscosta/sistema-bancario-java/tree/main/src) ou [baixá-lo como um arquivo zip](https://github.com/asergioscosta/sistema-bancario-java/archive/refs/heads/main.zip).
 
