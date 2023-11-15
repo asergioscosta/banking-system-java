@@ -59,28 +59,28 @@ Considerações sobre os Métodos nas Classes Concretas:
 
 ## Funcionalidades
 
-- `Funcionalidade 1:` 
+**`Funcionalidade 1:`**
 
-Criar dois funcionários do banco, um gerente e um atendente.
+- Criar dois funcionários do banco, um gerente e um atendente.
 
-- `Funcionalidade 2:` 
+**`Funcionalidade 2:`**
 
-Criar um cliente e adicione 3 endereços a ele.
-Imprimir os endereços desse cliente.
+- Criar um cliente e adicione 3 endereços a ele.
+- Imprimir os endereços desse cliente.
 
-- `Funcionalidade 3:` 
-Criar um cliente que possua uma ContaCorrente.
-Efetuar três depósitos de 100 nessa ContaCorrente.
-Efetuar um saque de 50 reais nessa ContaCorrente.
-Imprimir o valor do saldo dessa ContaCorrente.
+**`Funcionalidade 3:`**
+- Criar um cliente que possua uma ContaCorrente.
+- Efetuar três depósitos de 100 nessa ContaCorrente.
+- Efetuar um saque de 50 reais nessa ContaCorrente.
+- Imprimir o valor do saldo dessa ContaCorrente.
 
-- `Funcionalidade 4:` 
+**`Funcionalidade 4:`**
 
-Criar um cliente que possua uma ContaCorrente.
-Efetuar um depósito de 1000 nessa ContaCorrente.
-Criar um cliente que possua uma ContaPoupanca.
-Efetuar um depósito de 1000 reais nessa conta Poupanca.
-Efetue uma transferência de 500 reais da ContaCorrente para ContaPoupanca.
+- Criar um cliente que possua uma ContaCorrente.
+- Efetuar um depósito de 1000 nessa ContaCorrente.
+- Criar um cliente que possua uma ContaPoupanca.
+- Efetuar um depósito de 1000 reais nessa conta Poupanca.
+- Efetue uma transferência de 500 reais da ContaCorrente para ContaPoupanca.
 
 ## Técnicas e Tecnologias Utilizadas
 
