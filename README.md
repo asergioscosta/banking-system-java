@@ -87,7 +87,7 @@ Considerações sobre os Métodos nas Classes Concretas:
 - **Linguagem de Programação:** ``Java 8``
 - **Ambiente de Desenvolvimento:** ``IntelliJ IDEA``
 - **Paradigma de Programação:** ``Orientação a Objetos``
-
+- **Ferramentas de Controle de Versão:** ``GitHub``
 
 ## Acesso ao Projeto
 
@@ -95,14 +95,15 @@ Você pode acessar os arquivos do projeto [clicando aqui](https://github.com/ase
 
 ## Abrir e Executar o Projeto
 
-Após baixar o projeto, siga as instruções abaixo para abrir e executar o projeto utilizando o `IntelliJ IDEA`.
-
-1. Abra o IntelliJ IDEA;
-2. No menu principal, selecione "File" -> "Open" e navegue até o diretório onde você baixou o projeto;
-3. Selecione a pasta do projeto e clique em "Open";
-4. Aguarde o IntelliJ IDEA carregar o projeto;
-5. Localize a pasta denominada `src` ou similar;
-6. Crie as aplicações do projeto e os códigos.
+1. Escolha uma pasta para criar o projeto. Ex.: ``d:\nome_pasta``
+2. Crie um repositório no GitHub.
+3. Clone o repositório usando o comando ``git clone <URL_do_repositorio>``.
+4. Abra o IntelliJ IDEA;
+5. No menu principal, selecione "File" -> "Open" e navegue até o diretório onde você baixou o projeto;
+6. Selecione a pasta do projeto e clique em "Open";
+7. Aguarde o IntelliJ IDEA carregar o projeto;
+8. Localize a pasta denominada `src` ou similar;
+9. Crie as aplicações do projeto e os códigos.
 
 Certifique-se de que as configurações do seu ambiente Java estão corretamente configuradas no IntelliJ IDEA. Caso necessário, o IntelliJ deve sugerir automaticamente a configuração do SDK Java.
 
