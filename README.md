@@ -8,7 +8,7 @@
 
 - [Funcionalidades](#funcionalidades)
 
-- [Técnicas e Tecnologias Utilizadas](#tecnicas-e-tecnologias-utilizadas)
+- [Técnicas e Tecnologias Utilizadas](#técnicas-e-tecnologias-utilizadas)
 
 - [Acesso ao Projeto](#acesso-ao-projeto)
 
@@ -100,12 +100,11 @@ Após baixar o projeto, siga as instruções abaixo para abrir e executar o proj
 2. No menu principal, selecione "File" -> "Open" e navegue até o diretório onde você baixou o projeto;
 3. Selecione a pasta do projeto e clique em "Open";
 4. Aguarde o IntelliJ IDEA carregar o projeto;
-5. Localize o arquivo principal, geralmente denominado `Main.java` ou similar.
-6. Clique com o botão direito no arquivo principal e selecione "Run" para iniciar a aplicação.
+5. Localize a pasta denominada `src` ou similar;
+6. Crie as aplicações do projeto e os códigos.
 
 Certifique-se de que as configurações do seu ambiente Java estão corretamente configuradas no IntelliJ IDEA. Caso necessário, o IntelliJ deve sugerir automaticamente a configuração do SDK Java.
 
 ## Desenvolvedores
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/102989796?v=4" width=115><br><sub>Augusto Sérgio</sub>](https://github.com/asergioscosta)
-| :---: | :---: | :---: |
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/102989796?v=4" width=115>](https://github.com/asergioscosta)
