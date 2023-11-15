@@ -6,11 +6,11 @@
 
 - [Requisitos](#requisitos)
 
-- [Funcionalidades](#🔨-funcionalidades)
+- [Funcionalidades](#funcionalidades)
 
-- [Técnicas e Tecnologias Utilizadas](#✔️-técnicas-e-tecnologias-utilizadas)
+- [Técnicas e Tecnologias Utilizadas](#técnicas-e-tecnologias-utilizadas)
 
-- [Acesso ao Projeto](#📁-acesso-ao-projeto)
+- [Acesso ao Projeto](#acesso-ao-projeto)
 
 - [Abrir e Executar o Projeto](#abrir-e-executar-o-projeto)
 
