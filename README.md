@@ -1,112 +1,114 @@
-# Sistema Bancário
+# Banking System
 
-### Índice
+### Index
 
-- [Descrição do Projeto](#descrição-do-projeto)
+- [Project Description](#project-description)
+- [Requirements](#requirements)
+- [Features](#features)
+- [Techniques and Technologies Used](#techniques-and-technologies-used)
+- [Accessing the Project](#accessing-the-project)
+- [Opening and Running the Project](#opening-and-running-the-project)
+- [Developers](#developers)
 
-- [Requisitos](#requisitos)
+## Project Description
 
-- [Funcionalidades](#funcionalidades)
+This Java project implements a simple banking system with abstract and concrete classes, as well as interfaces to represent different entities of the bank. The system allows for the creation of bank employees, clients with associated addresses, and the performance of basic banking operations such as deposits, withdrawals, and transfers.
 
-- [Técnicas e Tecnologias Utilizadas](#técnicas-e-tecnologias-utilizadas)
+## Requirements
 
-- [Acesso ao Projeto](#acesso-ao-projeto)
+1. **Creation of Abstract Classes:**
+   - The `Account` and `Person` classes are abstract classes, meaning objects cannot be instantiated from these classes.
 
-- [Abrir e Executar o Projeto](#abrir-e-executar-o-projeto)
+2. **Creation of the `IUser` Interface:**
+   - The `IUser` interface has only the signature of a method.
+   - The method, when implemented in the classes that perform the interface, must return only `True`.
 
-- [Desenvolvedores](#desenvolvedores)
+3. **Creation of Concrete Classes:**
+   - The concrete classes correspond to all other classes, and some of them have inheritance relationships with the abstract classes of the model.
 
+Considerations about Methods in Concrete Classes:
 
-## Descrição do Projeto
+   a. **`listAddresses()` Method of the `Client` Class:**
+      - The method should print to the console all addresses stored for a client.
 
-Este projeto Java implementa um sistema bancário simples com classes abstratas e concretas, bem como interfaces para representar diferentes entidades do banco. O sistema permite a criação de funcionários do banco, clientes com endereços associados e a realização de operações bancárias básicas, como depósitos, saques e transferências.
+   b. **`deposit()` Method of the `Account` Class:**
+      - Creates an object of type `Credit` linked to the account receiving the deposit.
 
-## Requisitos
+   c. **`withdraw()` Method of the `Account` Class:**
+      - Creates an object of type `Debit` linked to the account undergoing the withdrawal.
+      - The account cannot have a negative balance beyond its limit.
 
-1. **Criação das Classes Abstratas:**
-   - As Classes `Conta` e `Pessoa` são classes abstratas, ou seja, objetos não podem ser instanciados a partir dessas classes.
+   d. **`transfer()` Method of the `CheckingAccount` Class:**
+      - Withdraws money from the source checking account and sends it to a destination account.
+      - The account cannot have a negative balance beyond its limit.
 
-2. **Criação da Interface `IUsuario`:**
-   - A interface `IUsuario` possui apenas a assinatura de um método.
-   - O método, quando implementado nas classes que realizam a interface, deve retornar apenas `True`.
+   e. **`calculateBalance()` Method of the `SavingsAccount` Class:**
+      - Sums the value of all credits and subtracts it by the sum of the values of all debits.
 
-3. **Criação das Classes Concretas:**
-   - As classes concretas correspondem a todas as demais classes, sendo que algumas delas possuem relacionamento de herança com as classes abstratas do modelo.
+   f. **`calculateBalance()` Method of the `CheckingAccount` Class:**
+      - Sums the value of all credits and subtracts it by the sum of the values of all debits.
+      - Then, adds the value of the limit.
+      - Finally, returns the value.
 
-Considerações sobre os Métodos nas Classes Concretas:
+## Features
 
-   a. **Método `listarEnderecos()` da classe `Cliente`:**
-      - O método deve imprimir no console todos os endereços armazenados para um cliente.
+**`Feature 1:`**
 
-   b. **Método `depositar()` da classe `Conta`:**
-      - Cria um objeto do tipo `Credito` vinculado à conta que está recebendo o depósito.
+- Create two bank employees, one manager and one teller.
 
-   c. **Método `sacar()` da classe `Conta`:**
-      - Cria um objeto do tipo `Debito` vinculado à conta que está sofrendo o saque.
-      - A conta não pode ter saldo negativo além do seu limite.
+**`Feature 2:`**
 
-   d. **Método `transferir()` da classe `ContaCorrente`:**
-      - Retira dinheiro da conta corrente de origem e envia para uma conta destino.
-      - A conta não pode ter saldo negativo além do seu limite.
+- Create a client and add 3 addresses to him/her.
+- Print the addresses of this client.
 
-   e. **Método `calcularSaldo()` da `ContaPoupanca`:**
-      - Soma o valor de todos os créditos e subtrai pela soma dos valores de todos os débitos.
+**`Feature 3:`**
+- Create a client who has a CheckingAccount.
+- Make three deposits of 100 into this CheckingAccount.
+- Make a withdrawal of 50 from this CheckingAccount.
+- Print the balance of this CheckingAccount.
 
-   f. **Método `calcularSaldo()` da `ContaCorrente`:**
-      - Soma o valor de todos os créditos e subtrai pela soma dos valores de todos os débitos.
-      - Após, soma o valor do limite.
-      - Ao final, retorna o valor.
+**`Feature 4:`**
 
-## Funcionalidades
+- Create a client who has a CheckingAccount.
+- Make a deposit of 1000 into this CheckingAccount.
+- Create a client who has a SavingsAccount.
+- Make a deposit of 1000 into this SavingsAccount.
+- Transfer 500 from the CheckingAccount to the SavingsAccount.
 
-**`Funcionalidade 1:`**
+## Techniques and Technologies Used
 
-- Criar dois funcionários do banco, um gerente e um atendente.
+- **Programming Language:** ``Java-8``
+- **IDE (Integrated Development Environment):** ``IntelliJ IDEA``
+- **Programming Paradigm:** ``Object-Oriented Programming``
+- **Version Control Tools:** ``Git`` and ``GitHub``
 
-**`Funcionalidade 2:`**
+## Accessing the Project
 
-- Criar um cliente e adicione 3 endereços a ele.
-- Imprimir os endereços desse cliente.
+You can access the project files [by clicking here](https://github.com/asergioscosta/sistema-bancario-java/tree/main/src) or [download them as a zip file](https://github.com/asergioscosta/sistema-bancario-java/archive/refs/heads/main.zip).
 
-**`Funcionalidade 3:`**
-- Criar um cliente que possua uma ContaCorrente.
-- Efetuar três depósitos de 100 nessa ContaCorrente.
-- Efetuar um saque de 50 reais nessa ContaCorrente.
-- Imprimir o valor do saldo dessa ContaCorrente.
+## Opening and Running the Project
 
-**`Funcionalidade 4:`**
+1. Choose or create a folder on your computer to store the project.
+2. Create a repository on GitHub or use an existing one.
+3. Clone the repository to your local machine using the command `git clone <repository_URL>` in your terminal or Git Bash.
+4. Open IntelliJ IDEA.
+5. In the main menu, select "File" -> "Open" and navigate to the directory where you cloned the project.
+6. Select the project folder and click "Open".
+7. Wait for IntelliJ IDEA to load the project.
+8. Locate the folder named ``src`` or similar in the project.
+9. Open the project in IntelliJ IDEA and wait for indexing.
+10. Make sure the Java SDK settings are correctly configured in IntelliJ IDEA. If necessary, IntelliJ should automatically suggest configuring the Java SDK.
+11. After setting up the SDK, you can start working with the project code.
+12. To run the project, find the main entry point (e.g., a class with the ``main`` method) and execute it by clicking on the green execution icon next to the method or main class.
+13. Make sure to follow the project-specific instructions to test its functionalities.
+14. If you wish to make modifications to the project, make changes to the Java files using IntelliJ IDEA.
+15. After making the desired changes, save the files and follow the steps to run the project again to test your modifications.
+16. Once you have completed your modifications, you can upload the changed code to GitHub following the Git instructions.
 
-- Criar um cliente que possua uma ContaCorrente.
-- Efetuar um depósito de 1000 nessa ContaCorrente.
-- Criar um cliente que possua uma ContaPoupanca.
-- Efetuar um depósito de 1000 reais nessa conta Poupanca.
-- Efetue uma transferência de 500 reais da ContaCorrente para ContaPoupanca.
+Be sure to review and test your code before committing to ensure that the project's functionalities are working as expected.
 
-## Técnicas e Tecnologias Utilizadas
+Make sure that all necessary dependencies are installed and configured correctly in your development environment.
 
-- **Linguagem de Programação:** ``Java 8``
-- **Ambiente de Desenvolvimento:** ``IntelliJ IDEA``
-- **Paradigma de Programação:** ``Orientação a Objetos``
-- **Ferramentas de Controle de Versão:** ``GitHub``
-
-## Acesso ao Projeto
-
-Você pode acessar os arquivos do projeto [clicando aqui](https://github.com/asergioscosta/sistema-bancario-java/tree/main/src) ou [baixá-lo como um arquivo zip](https://github.com/asergioscosta/sistema-bancario-java/archive/refs/heads/main.zip).
-
-## Abrir e Executar o Projeto
-
-1. Escolha uma pasta para criar o projeto. Ex.: ``d:\nome_pasta``
-2. Crie um repositório no GitHub.
-3. Clone o repositório usando o comando ``git clone <URL_do_repositorio>``.
-4. Abra o IntelliJ IDEA;
-5. No menu principal, selecione "File" -> "Open" e navegue até o diretório onde você baixou o projeto;
-6. Selecione a pasta do projeto e clique em "Open";
-7. Aguarde o IntelliJ IDEA carregar o projeto;
-8. Localize a pasta denominada `src` ou similar;
-9. Crie as aplicações do projeto e os códigos.
-
-Certifique-se de que as configurações do seu ambiente Java estão corretamente configuradas no IntelliJ IDEA. Caso necessário, o IntelliJ deve sugerir automaticamente a configuração do SDK Java.
-
-## Desenvolvedores
+## Developers
 
 [<img loading="lazy" src="https://avatars.githubusercontent.com/u/102989796?v=4" width=115>](https://github.com/asergioscosta)
